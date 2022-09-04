@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+Compare 2 squares
+"""
+
+
 class Square:
     """ A class that defines a square by its size
     """
