@@ -1,9 +1,13 @@
 #!/usr/bin/node
-function factorial (a) {
-  if ((Number.isNaN(a)) || (a === 1)) {
-    return 1;
-  }
-  return factorial(a - 1) * a;
-}
+let num = 0;
+num = parseInt(process.argv[2]);
 
-console.log(factorial(parseInt(process.argv[2])));
+console.log(factorial(parseInt(num)));
+
+function factorial (num) {
+  if (isNaN(num) || num === 1) {
+    return (1);
+  } else {
+    return (num * factorial(num - 1));
+  }
+}
